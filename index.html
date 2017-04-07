@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 1: Antibiotics</title>
+
+    <!-- If you want to use a CSS framework, load it here (or in CSS) -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!--Your stylesheet-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Plotly CDN-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Load jQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--Your script-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Create a header that describes the project -->
+    <header id = 'index-banner'>
+        <h1>Assignment 1: Early Antibiotics</h1>
+        <h2>By Ashlyn Opgrande</h2>
+    </header>
+    <!-- Create a container object to hold the main section of your page -->
+    <container>
+        <!-- Create a div with an id of bubbleMap in which to render your map -->
+        <h2>Question 1: What is the average effectiveness of each antibiotic?</h2>
+            <p>The graph below describes the average effectiveness of each type of antibiotic. I believe when beginning to understand
+                data by using visualizations, it is useful to start with a simple chart like this. By using a bar chart, users can 
+                quickly percieve that there are 3 different types of antibiotics and their relative average effectiveness for all 15 
+                types of bacteria. This allows us to get a first glance at what our data looks like and to begin to understand the story
+                behind this data. So length in this chart shows the average effectiveness. I chose this because it's relatively simple
+                to identify the longest bars in this graph, and I think it accurately represents how effective penicilin is. Next, I used 
+                color in order to differentiate between each bar. I selected blue for penicilin because your eyes are naturally drawn to the 
+                bar anyways since it is much larger, so I wanted to use a color that didn't take over the entire graph. Therefore, I used stronger
+                colors like red and green to catch the users eyes for the other charts. This allows for users to easily identify where the other bars
+                are located. I also chose to use a log axis since the penecilin had a much higher average effectiveness. I think this visualization
+                is best for representing data such as this because it is simple, clear, and straight to the point. Unlike a pie chart or a scatter
+                plot, it is easy to get a clear picture from this graph.
+            </p>
+        <div class="boxed"id="chart1">
+        </div>
+        <h2>Question 2: How effective is each antibiotic on each type of bacteria?</h2>
+        <p> In this visualization I wanted to begin to dive deeper into this data set. I thought an important aspect to analyze was the different types
+            of bacteria that were analyzed and how effective each antibiotic was on each of them. I wanted to create this graph after I began to wonder
+            if just because penecilin had the highest average effectiveness, did that mean it was the best antibiotic for every bacteria? In order to 
+            get this information, I chose to use a stacked bar chart. This allows me to look at each bacteria, as well as the effectiveness of each drug.
+            This may had been possible using something like scatter plots or pie charts, but I felt those graphs would be too cluttered and force the users
+            to really work to understand the chart. Therefore, a simple stacked bar chart allows us to compare the different effectiveness of each
+            drug very quickly. One issue I do find with this dataset is that again, penecilin is much more effective and it can make the other antibiotics 
+            harder to see. The same color legend as before is also used again, this was intentional to avoid confusing the user. I think this visualization was 
+            very effective, considering I was able to quickly identify that Penecilin is a very good antibiotic, but sometimes Streptomycin was better.
+        </p>
+        <div class="boxed" id="chart2">
+        </div>
+        <h2>Question 3: Which antibiotic is more effective on gram stain? </h2>
+        <p> Lastly, I wanted to include the gram stain into this analysis. It would be helpful to understand which types of gram strains each antibiotic was 
+            better at treating in order to identify when a certain antibiotic should be used. Again, I battled with using something such as a scatter plot or a 
+            pie chart, but I do not think they convey the information nearly as well. For one, when using a pie chart for this data, the user misses the differences
+            between the effectiveness for negative and positive stains. A pie chart misses this because the size of the pie charts for each gram stain are still the same, even if the 
+            slices are different. On the other hand, a grouped bar chart lets us see not only which antibiotic was better for one gram stain, but it lets us 
+            also compare them to the opposite gram stain. This grouped bar chart gives us twice the information. I once again went with the same color scheme in order
+            to not confuse the user. The log axis was also used again to ensure visibility. 
+        </p>
+        <div class="boxed" id="chart3">
+        </div>
+    </container>
+</body>
+
+</html>
